@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/storyImage" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_baseline_image_24"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/reverse" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/skip" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <jp.shts.android.storiesprogressview.StoriesProgressView android:gravity="top" android:id="@+id/storiesProgress" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginTop="8dp"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/storiesProgress">
+        <com.mikhaellopez.circularimageview.CircularImageView android:id="@+id/storyPhoto" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_action_image_circle" android:layout_centerVertical="true" app:civ_border="false"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/storyUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Username" android:layout_centerVertical="true" android:layout_toEndOf="@+id/storyPhoto"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/r_seen" android:background="#20000000" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/story_view"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/seenNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/storyDelete" android:background="#20000000" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/story_delete" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

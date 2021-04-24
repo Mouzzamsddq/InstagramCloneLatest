@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollImage"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UploadProfileImageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:id="@+id/relativeLayout"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_below="@id/addTextView"
+            android:layout_marginTop="30dp"
+            android:id="@+id/profileLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_height="250dp">
+
+
+   <com.mikhaellopez.circularimageview.CircularImageView
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/com_facebook_profile_picture_blank_square"
+       android:layout_marginTop="30dp"
+       android:id="@+id/profileImageView"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/plusImageView"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_plus"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add profile picture"
+            android:textColor="@color/facebook_blue"
+            android:textSize="28sp"
+            android:textAllCaps="true"
+            android:id="@+id/addTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"/>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/facebook_blue"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:id="@+id/uploadNextButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/profileLayout"
+            android:layout_marginTop="20dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/facebook_blue"
+            android:text="Skip"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:id="@+id/skipButton"
+            android:textColor="#FFFF"
+            android:layout_below="@id/uploadNextButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/profileLayout"
+            android:layout_marginTop="20dp"
+            android:id="@+id/progressLinearLayout"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/facebook_blue"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

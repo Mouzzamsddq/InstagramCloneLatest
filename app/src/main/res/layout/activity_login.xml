@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/instaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/caveat_brush"
+        android:text="Instagram"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email address"
+        android:padding="10dp"
+        android:id="@+id/emailEditText"
+        android:background="@drawable/border"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/instaTextView"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:id="@+id/passwordEditText"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/loginButton"
+        android:textAllCaps="false"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/facebook_blue"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:id="@+id/progressLinearLayout"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/facebook_blue"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminateTint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:layout_below="@+id/loginButton"
+           android:id="@+id/linear1"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Fogotten your login details?"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Get help with signing in."
+               android:textStyle="bold"
+               android:textColor="@android:color/black"/>
+
+       </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/orTextView"
+        android:textStyle="bold"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/com_facebook_blue"
+        android:layout_below="@id/orTextView"
+        android:layout_marginTop="20dp"
+        android:id="@id/fbLoginButton"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:gravity="center"
+        android:id="@+id/linear2"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_alignLeft="@id/orTextView"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_alignRight="@id/orTextView"
+        android:layout_below="@id/linear1"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="30dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

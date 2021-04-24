@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".EmailFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email address"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border"
+        android:id="@+id/emailEditText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Next"
+        android:id="@+id/emailNextButton"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/com_facebook_blue"
+        android:layout_below="@+id/emailEditText"
+        android:layout_marginTop="15dp"/>
+
+
+</RelativeLayout>

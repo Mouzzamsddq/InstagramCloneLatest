@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l1"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/profileImageView"
+                android:background="@drawable/ic_action_image_circle"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:id="@+id/usernameText1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/optionImageView"
+                android:src="@drawable/ic_action_option"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postImageView"
+            android:src="@drawable/ic_baseline_image_24"
+            android:layout_below="@id/l1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/likeImageView"
+                android:src="@drawable/ic_action_like"/>
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_action_comment"
+                android:layout_toEndOf="@id/likeImageView"
+                android:id="@+id/commentImageView"
+                android:layout_marginStart="10dp"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_action_chat"
+                android:layout_toEndOf="@+id/commentImageView"
+                android:layout_marginStart="10dp"
+                android:id="@+id/sendPostImageView"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_action_save"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/saveImageView"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,000 likes"
+            android:textStyle="bold"
+            android:id="@+id/likeTextView"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:id="@+id/usernameText2"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caption text"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/descriptionTextView" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View all 23 comments"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/commentTextView"
+            android:textSize="14sp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 December 2019"
+            android:textSize="10sp"
+            android:id="@+id/timeTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
